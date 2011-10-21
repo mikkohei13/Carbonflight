@@ -8,12 +8,12 @@ $from = ($_GET['from']); // DEBUG
 $to = ($_GET['to']); // DEBUG
 
 
-require_once "testdata.php";
+require_once "../testdata.php";
 
 
-foreach ($to as $key => $holidayDestination)
+foreach ($to as $key => $singleTo)
 {
-	$result[$key] = $holidayDestination;
+	$result[$key] =  $distance[$from][$singleTo] * $carbonKgPerKm;
 }
 
 
