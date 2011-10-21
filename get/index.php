@@ -2,26 +2,31 @@
 header('Content-Type: text/html; charset=utf-8'); 
    
    
-echo "<pre>"; // DEBUG
+//echo "<pre>"; // DEBUG
 
-$from = ($_GET['from']); // DEBUG
-$to = ($_GET['to']); // DEBUG
+$from = ($_GET['from']);
+$to = ($_GET['to']);
 
 
 require_once "../testdata.php";
 
-
-foreach ($to as $key => $singleTo)
+if (is_array($to))
 {
-	$result[$key] =  $distance[$from][$singleTo] * $carbonKgPerKm;
+	foreach ($to as $key => $singleTo)
+	{
+		$result[$key] =  $distance[$from][$singleTo] * $carbonKgPerKm;
+	}
 }
-
+else
+{
+	$result[0] =  $distance[$from][$to] * $carbonKgPerKm;	
+}
 
 $json = json_encode($result);
 
 
-echo "<hr />";
-print_r ($result);
+//echo "<hr />";
+//print_r ($result);
 print_r ($json);
 
 ?>
