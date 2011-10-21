@@ -14,12 +14,12 @@ if (is_array($to))
 {
 	foreach ($to as $key => $singleTo)
 	{
-		$result[$key] =  $distance[$from][$singleTo] * $carbonKgPerKm;
+		$result[$singleTo] =  $distance[$from][$singleTo] * $carbonKgPerKm;
 	}
 }
 else
 {
-	$result[0] =  $distance[$from][$to] * $carbonKgPerKm;	
+	$result[$to] =  $distance[$from][$to] * $carbonKgPerKm;	
 }
 
 $json = json_encode($result);
