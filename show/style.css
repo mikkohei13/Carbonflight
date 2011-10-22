@@ -1,0 +1,19 @@
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 strong {
+	color: #77aa11;
+}
+
+footer {
+	background-color: #eee;
+	padding: 1em;
+	margin-top: 2em;
+}
+
+footer p {
+	color: #8899aa;
+	margin: 0;
+}
