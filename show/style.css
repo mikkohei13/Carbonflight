@@ -3,8 +3,17 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 }
 
+h1 {
+	text-align: center;
+}
+
 h1 strong {
 	color: #77aa11;
+}
+
+section div {
+	margin: auto 2em;
+	text-align: center
 }
 
 footer {
@@ -14,6 +23,7 @@ footer {
 }
 
 footer p {
+	margin: auto 2em;
 	color: #8899aa;
 	margin: 0;
 }
