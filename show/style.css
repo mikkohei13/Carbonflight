@@ -1,10 +1,22 @@
 
 body {
 	font-family: Helvetica, Arial, sans-serif;
+	font-size: 120%;
+}
+
+header, footer, section {
+	margin: auto 2em;
 }
 
 h1 {
 	text-align: center;
+	font-size: 200%;
+}
+
+header {
+	margin-top: -10px;
+	height: 80px;
+	background: #5676a3 url('plane.png') top right no-repeat;
 }
 
 h1 strong {
@@ -12,18 +24,17 @@ h1 strong {
 }
 
 section div {
-	margin: auto 2em;
 	text-align: center
 }
 
 footer {
 	background-color: #eee;
 	padding: 1em;
-	margin-top: 2em;
+	margin-top: 2em !important;
 }
 
 footer p {
-	margin: auto 2em;
 	color: #8899aa;
 	margin: 0;
 }
+

@@ -100,21 +100,21 @@ while ($i < $array['conversion']['amount'])
 </head>
 
 	<header><div>
-
-<?php
-
-// echo "<h1><strong>$co2 kg CO<sub>2</sub></strong> is <strong>$percentage %</strong> of your yearly emissions<h1>";
-echo "<h1><strong>$co2 kg CO<sub>2</sub></strong> adds <strong>$percentageAdd %</strong> to your yearly emissions*<h1>\n\n";
-
-?>
-
+		&nbsp;
 	</div></header>
 
 	<section><div>
 	
 <?php
 
-echo "<h3>$co2 kg CO<sub>2</sub> equals to</h3>\n\n";
+
+// echo "<h1><strong>$co2 kg CO<sub>2</sub></strong> is <strong>$percentage %</strong> of your yearly emissions<h1>";
+echo "<h1><strong>$co2 kg CO<sub>2</sub></strong> adds <strong>$percentageAdd %</strong> to your yearly emissions*<h1>\n\n";
+
+
+
+//echo "<h3>$co2 kg CO<sub>2</sub> equals to</h3>\n\n";
+echo "<h3>...and equals to </h3>\n\n";
 
 foreach ($comparison as $key => $p)
 {
@@ -127,13 +127,17 @@ foreach ($comparison as $key => $p)
 	
 	<footer><div>
 	
-	<p>*Sweden's carbon footprint is 8400 kg per capita</p>
+	<p>*Based on average Swedish carbon footprint of 8400 kg / year</p>
 	
 	<h4>Sources</h4>
 	
 	<p>Flight emissions: <a href="https://www.carbonplanet.com/shop/offsets?offset_type=Flight">Carbon Planet</a></p>
 	<p>Sweden's carbon footprint: <a href="http://www.wwf.se/source.php/1211289/An_Analysis_of_Swedens_Carbon_Footprint.pdf">WWF: An Analysis of Sweden's Carbon Footprint</a></p>
 	<p>Carbon comparison: <a href="http://carbon.to/">Carbon.to</a></p>
+	
+	<h4>Credits</h4>
+	<p>Photo: <a href="http://www.flickr.com/photos/98216330@N00/345691030/">Breathe it in</a> by <a href="http://www.flickr.com/photos/98216330@N00/">Paul Evans</a>, <a href="http://creativecommons.org/licenses/by-nc/2.0/deed.en">CC BY-NC</a></p>
+	<p>Extension & site: <a href="http://twitter.com/mikkohei13">mikkohei13</a> &amp; <a href="http://twitter.com/pe3">pe3</a></p>
 
 	</div></footer>
 	
