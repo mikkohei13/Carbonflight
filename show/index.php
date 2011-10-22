@@ -22,10 +22,29 @@ $percentageAdd = round($co2 / $footprint * 100, 0);
 // -----------------------------------------------------------------
 // Comparisons
 
+// Laptop
+$url = "http://carbon.to/laptop.json?co2=$co2";
+$json = file_get_contents($url);
+$array = json_decode($json, TRUE);
+
+//print_r ($array);
+
+$years = round($array['conversion']['amount'] / 8 / 365, 1);
+$comparison['laptop'] = "<p>" . $years . " years using a laptop 8 h per day</p>";
+
+
+// Car
+$url = "http://carbon.to/car.json?co2=$co2";
+$json = file_get_contents($url);
+$array = json_decode($json, TRUE);
+
+//print_r ($array);
+
+$comparison['car'] = "<p>" . $array['conversion']['amount'] . " km driving by a car</p>";
+
 // Beers
 $url = "http://carbon.to/beers.json?co2=$co2";
 $json = file_get_contents($url);
-
 $array = json_decode($json, TRUE);
 
 //print_r ($array);
@@ -38,17 +57,7 @@ while ($i < $array['conversion']['amount'])
 	$i++;
 }
 
-// Beef
-/*
-$url = "http://carbon.to/beers.json?co2=$co2";
-$json = file_get_contents($url);
 
-$array = json_decode($json, TRUE);
-
-//print_r ($array);
-
-$comparison['beers'] = "<p>" . $array['conversion']['amount'] . " " . $array['conversion']['unit'] . "<br />";
-*/
 
 // -----------------------------------------------------------------
 
