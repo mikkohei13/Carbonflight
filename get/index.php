@@ -10,6 +10,7 @@ $to = ($_GET['to']);
 
 require_once "../testdata.php";
 
+// Generates data-array
 if (is_array($to))
 {
 	foreach ($to as $key => $singleTo)
@@ -24,9 +25,18 @@ else
 
 $json = json_encode($result);
 
+// Wraps as JSONP...
+if (isset($_GET['callback']))
+{
+	$callback = $_GET['callback'];
+	echo $callback . "(" . $json . ");";
+}
+// ..or echoes simple JSON
+else
+{
+	echo $json;
+}
 
-//echo "<hr />";
-//print_r ($result);
-print_r ($json);
+
 
 ?>
