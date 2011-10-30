@@ -136,7 +136,8 @@ foreach ($comparison as $key => $p)
 	<p>Carbon comparison: <a href="http://carbon.to/">Carbon.to</a></p>
 	
 	<h4>Credits</h4>
-	<p>Photo: <a href="http://www.flickr.com/photos/98216330@N00/345691030/">Breathe it in</a> by <a href="http://www.flickr.com/photos/98216330@N00/">Paul Evans</a>, <a href="http://creativecommons.org/licenses/by-nc/2.0/deed.en">CC BY-NC</a></p>
+	<p>Airplane photo: <a href="http://www.flickr.com/photos/98216330@N00/345691030/">Breathe it in</a> by <a href="http://www.flickr.com/photos/98216330@N00/">Paul Evans</a>, <a href="http://creativecommons.org/licenses/by-nc/2.0/deed.en">CC BY-NC</a></p>
+	<p>Bottle based on photo: <a href="http://www.flickr.com/photos/robertsfw/5588137007/in/photostream/">bottle shot combe blanche calamiac terroir</a> by <a href="http://www.flickr.com/people/robertsfw/">Greg Roberts</a>, <a href="http://creativecommons.org/licenses/by/2.0/deed.en">CC BY</a></p>
 	<p>Extension & site: <a href="http://twitter.com/mikkohei13">mikkohei13</a> &amp; <a href="http://twitter.com/pe3">pe3</a></p>
 
 	</div></footer>
